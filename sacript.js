@@ -1,4 +1,5 @@
 "use strict";
+// made by reyan 
 const WaqtStuffs = (props) => {
     const ref = React.useRef(null);
     const colon = props.char === ":";
@@ -48,6 +49,7 @@ const Waqt = () => {
     return (React.createElement("div", { id: "saccytimer" },
         React.createElement("div", { id: "saccytimer-text" }, getChars())));
 };
+// skriti is very very gorgeous 
 const ClockThingy = () => {
     return (React.createElement("div", { id: "ClockThingy" },
         React.createElement(Waqt, null)));
