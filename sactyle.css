@@ -1,0 +1,127 @@
+body {
+    background-color: #1e1e1e;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+  }
+  body input, body h1, body a, body span {
+    color: #5a5a5a;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  #ClockThingy {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+  }
+  #ClockThingy #saccytimer {
+    background: linear-gradient(to bottom right, #0263e1, #eb1836);
+    border-radius: 22px;
+  }
+  #ClockThingy #saccytimer #saccytimer-text {
+    align-items: center;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    display: flex;
+    margin: 4px;
+    padding: 0px 20px;
+  }
+  #ClockThingy #saccytimer #saccytimer-text .waqt-stuff {
+    height: 150px;
+    position: relative;
+    text-align: center;
+    width: 80px;
+  }
+  #ClockThingy #saccytimer #saccytimer-text .waqt-stuff.colon {
+    color: white;
+    font-size: 8em;
+    line-height: 150px;
+  }
+  #ClockThingy #saccytimer #saccytimer-text .waqt-stuff .waqt-stuff-slider {
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    transition: top 200ms;
+    width: 80px;
+  }
+  #ClockThingy #saccytimer #saccytimer-text .waqt-stuff .waqt-stuff-slider .waqt-stuff-slider-option {
+    color: white;
+    font-size: 4em;
+    height: 150px;
+    line-height: 150px;
+    opacity: 0.05;
+    transition: opacity 400ms, font-size 400ms;
+    width: 80px;
+  }
+  #ClockThingy #saccytimer #saccytimer-text .waqt-stuff .waqt-stuff-slider .waqt-stuff-slider-option.active {
+    font-size: 8em;
+    opacity: 1;
+  }
+  
+  @media (max-width: 800px) {
+    #ClockThingy #saccytimer {
+      border-radius: 16px;
+    }
+    #ClockThingy #saccytimer #saccytimer-text {
+      border-radius: 14px;
+      margin: 4px;
+      padding: 0px 12px;
+    }
+    #ClockThingy #saccytimer #saccytimer-text .waqt-stuff {
+      height: 80px;
+      width: 40px;
+    }
+    #ClockThingy #saccytimer #saccytimer-text .waqt-stuff.colon {
+      font-size: 4em;
+      line-height: 80px;
+    }
+    #ClockThingy #saccytimer #saccytimer-text .waqt-stuff .waqt-stuff-slider {
+      width: 40px;
+    }
+    #ClockThingy #saccytimer #saccytimer-text .waqt-stuff .waqt-stuff-slider .waqt-stuff-slider-option {
+      font-size: 2em;
+      height: 80px;
+      line-height: 80px;
+      width: 40px;
+    }
+    #ClockThingy #saccytimer #saccytimer-text .waqt-stuff .waqt-stuff-slider .waqt-stuff-slider-option.active {
+      font-size: 4em;
+    }
+  }
+  @media (max-width: 400px) {
+    #ClockThingy #saccytimer {
+      border-radius: 8px;
+    }
+    #ClockThingy #saccytimer #saccytimer-text {
+      border-radius: 6px;
+      margin: 2px;
+      padding: 0px 10px;
+    }
+    #ClockThingy #saccytimer #saccytimer-text .waqt-stuff {
+      height: 40px;
+      width: 20px;
+    }
+    #ClockThingy #saccytimer #saccytimer-text .waqt-stuff.colon {
+      font-size: 2em;
+      line-height: 40px;
+    }
+    #ClockThingy #saccytimer #saccytimer-text .waqt-stuff .waqt-stuff-slider {
+      width: 20px;
+    }
+    #ClockThingy #saccytimer #saccytimer-text .waqt-stuff .waqt-stuff-slider .waqt-stuff-slider-option {
+      font-size: 1.25em;
+      height: 40px;
+      line-height: 40px;
+      width: 20px;
+    }
+    #ClockThingy #saccytimer #saccytimer-text .waqt-stuff .waqt-stuff-slider .waqt-stuff-slider-option.active {
+      font-size: 2em;
+    }
+  }
