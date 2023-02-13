@@ -38,7 +38,7 @@ const Waqt = () => {
     };
     const getHours = (hours) => {
         return hours % 24 === 0 ? 24 : hours % 24;
-    };
+    }; //yes it is in 24 hour format, cmon who uses 12 hour format 
     const getTime = () => {
         const hours = getHours(date.getHours()), minutes = date.getMinutes(), seconds = date.getSeconds();
         return `${formatSegment(hours)}:${formatSegment(minutes)}:${formatSegment(seconds)}`;
